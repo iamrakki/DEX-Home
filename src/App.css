@@ -1,38 +1,527 @@
+body {
+  background-color: #010C19;
+}
+
 .App {
   text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.leftH {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.networkDropdown {
+  border-color: #08D8AF;
+}
+
+
+.networkDropdown select {
+  padding: 10px 42px;
+  color: white;
+  font-weight: 700;
+  background-color: transparent;
+  border-color: #08D8AF;
+}
+
+.networkDropdown option {
+  background-color: transparent;
+  color: #010C19;
+}
+
+
+.top {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 3%;
+  margin-bottom: 2%;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: solid;
+  border-color: rgba(0, 255, 255, 0.2);
+
+  --border: 3px;
+  --slant: 2em;
+  --color: #00ffff56;
+
+  font-size: 15px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background:
+    linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path:
+    polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+      100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  transition: color var(--t, 0.3s), background-size 0.3s;
+}
+
+.top img {
+  width: 50px; 
+  height: auto;
+}
+
+.form {
+  margin-left: auto;
+  justify-content: flex-end;
+  border: solid;
+  color: white;
+  margin-left: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-right: 30px;
+
+
+  --border: 3px;
+  --slant: 3em;
+  --color: #00ffff56;
+
+  font-size: 15px;
+  padding: 3em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background:
+    linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path:
+    polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+      100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  transition: color var(--t, 0.3s), background-size 0.3s;
+
+
+}
+
+.button-1 button {
+  padding: 10px 72px;
+  color: white;
+  font-weight: 700;
+  background-color: #08D8AF;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.ph {
+  display: inline;
+  gap: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button-2 button {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  background-color: #08D8AF;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 2%;
+  border: none;
+
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ph em {
+  margin-right: 10px;
+}
+
+.form-2 {
+  color: white;
+  border: solid;
+  height: 150px;
+  margin-bottom: 5%;
+
+
+  --border: 3px;
+  --slant: 2em;
+  --color: #00ffff56 ;
+
+  font-size: 10px;
+  padding: 0.4em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background:
+    linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path:
+    polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+      100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  transition: color var(--t, 0.3s), background-size 0.3s;
+
+
+}
+
+.form-2 img{
+  display: flex;
+  padding-top: 5px;
+  width: 40px; 
+  height: auto;
+  margin-left: 10px;
+}
+
+
+.form-2 p {
+  margin-left: 10px;
+}
+
+.form-2A {
+  display: flex;
+
+}
+
+
+.btn1 {
+  margin-left: 100px;
+  background-color: #0D305E;
+  color: white;
+  border: none;
+
+}
+
+.btn2 {
+  margin-left: 20px;
+  background-color: #0D305E;
+  color: white;
+  border: none;
+}
+
+.btn3 {
+  margin-left: 20px;
+  background-color: #0D305E;
+  color: white;
+  border: none;
+}
+
+.form-3 {
+  color: white;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.form-3>div {
+  margin-bottom: 20px;
+}
+
+
+.form-3-options-1 {
+  margin-left: 205px;
+}
+
+.form-3-options {
+  margin-left: 80px;
+}
+
+.form-3-button {
+  margin-left: 205px;
+  margin-right: -195px;
+  background-color: #0D305E;
+  color: white;
+  border: none;
+}
+
+.connectionButton {
+  padding: 10px 60px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(45deg, #08D8AF, #003CED);
+  clip-path: polygon(-10% 0, 93% 0, 118% 100%, 5% 100%);
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.connectionButton-2 {
+  padding: 10px 42px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(45deg, #08D8AF, #003CED);
+  clip-path: polygon(-10% 0, 93% 0, 118% 100%, 5% 100%);
+  margin-top: 30px;
+  margin-left: 30%;
+  border: none;
+}
+
+
+
+
+
+.chart-container {
+
+  position: absolute;
+  margin-left: 30px;
+  border: solid;
+  color: white;
+
+
+
+  --border: 3px;
+  --slant: 10em;
+  --color: #00ffff56;
+
+
+  font-size: 10px;
+  padding: 5em 5em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background:
+    linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 20px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path:
+    polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+      100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+
+}
+
+
+.bottom {
+  position: relative;
+  color: white;
+  border: solid;
+  margin-left: 30px;
+  margin-top: 2%;
+  margin-right: 465px;
+  margin-bottom: 2%;
+  --border: 3px;
+  --slant: 3em;
+  --color: #00ffff56;
+  font-size: 10px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background:
+    linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path:
+    polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+      100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+}
+
+
+.bottom-1 {
+  align-items: center;
+  display: flex;
+  gap: 50px;
+}
+
+.bottom-2 {
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  font-size: 12px;
+}
+
+.bottom-3 {
+  align-items: center;
+  margin-left: 92%;
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .leftH {
+    gap: 10px;
+    padding-right: 20%;
+  }
+
+  .rightH {
+    gap: 20px;
+    padding-left: 30%;
+  }
+
+  .top{
+    margin-left: 17px;
+    
+  }
+
+  .form {
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  .form-2 {
+    font-size: 12px;
+  }
+
+  .btn1,
+  .btn2,
+  .btn3 {
+    margin-left: 10px;
+  }
+
+  /* .networkDropdown{
+    margin-top: 10%;
+    } */
+
+  .connectionButton{
+    margin-top: 20%;
+    margin-right: 30%;
+  }
+  .connectionButton-2 {
+    margin-left: 10%;
+  }
+
+  .chart-container {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 125%;
+    margin-bottom: 30%;
+  }
+
+  .bottom {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 130%;
+  }
+
+  .bottom-1,
+  .bottom-2 {
+    gap: 15px;
+  }
+
+  .bottom-3 {
+    margin-left: 90%;
+  }
+}
+
+/* Media Query for Phones and smaller screens */
+@media only screen and (max-width: 480px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .leftH {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .rightH {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+
+  .form {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-2 {
+    font-size: 10px;
+  }
+
+  .btn1,
+  .btn2,
+  .btn3 {
+    margin-left: 5px;
+  }
+
+  .form-3-options-1,
+  .form-3-options,
+  .form-3-button {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .connectionButton,
+  .connectionButton-2 {
+    margin-left: 5%;
+  }
+
+  .chart-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+
+  .bottom {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .bottom-1,
+  .bottom-2 {
+    gap: 10px;
+  }
+
+  .bottom-3 {
+    margin-left: 70%;
   }
 }
